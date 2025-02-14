@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Supplementary Audio</title>
+  <meta charset="UTF-8" />
+  <title>Audio Comparisons</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      vertical-align: top;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    audio {
+      display: block;
+      margin: 0.5em auto;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>Audio links or embedded players go here.</p>
+<h1>Audio Examples</h1>
+<p>For five audio watermarking methods (AudioSeal, WavMark, Timbre-Watermark, MaskMark, and Collaborative), we provide examples of watermark removal transformations that leverage low-bitrate neural audio codecs and neural denoisers. In each row, we provide the original (un-watermarked) audio, audio watermarked with each method, and watermarked audio with a transformation applied.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style='min-width: 120px;'>Transformation</th>
+      <th>Original</th>
+      <th>AudioSeal<br/></th>
+      <th>Collaborative<br/></th>
+      <th>MaskMark<br/></th>
+      <th>Timbre-Watermark<br/></th>
+      <th>WavMark<br/></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Denoiser (0dB)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (0dB)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (0dB)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (0dB)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (0dB)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (0dB)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (0dB)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (0dB)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (0dB)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (0dB)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (0dB)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+    <tr>
+      <td><strong>Denoiser (10dB)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (10dB)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (10dB)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (10dB)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (10dB)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (10dB)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (10dB)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (10dB)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (10dB)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (10dB)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (10dB)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+    <tr>
+      <td><strong>Denoiser (20dB)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (20dB)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (20dB)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (20dB)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (20dB)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (20dB)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (20dB)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (20dB)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (20dB)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Denoiser (20dB)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Denoiser (20dB)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+    <tr>
+      <td><strong>Encodec-VoiceCraft (2.2kbps)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/Encodec-VoiceCraft (2.2kbps)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+    <tr>
+      <td><strong>FACodec (4.8kbps)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/FACodec (4.8kbps)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/FACodec (4.8kbps)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/FACodec (4.8kbps)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/FACodec (4.8kbps)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/FACodec (4.8kbps)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/FACodec (4.8kbps)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/FACodec (4.8kbps)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/FACodec (4.8kbps)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/FACodec (4.8kbps)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/FACodec (4.8kbps)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+    <tr>
+      <td><strong>SpeechTokenizer (4kbps)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/SpeechTokenizer (4kbps)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+    <tr>
+      <td><strong>TiCodec (3kbps)</strong></td>
+      <td><audio controls src="/assets/Original/orig_107.wav">Your browser does not support the audio element.</audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/TiCodec (3kbps)/AudioSeal/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/TiCodec (3kbps)/AudioSeal/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/TiCodec (3kbps)/Collaborative/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/TiCodec (3kbps)/Collaborative/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/TiCodec (3kbps)/MaskMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/TiCodec (3kbps)/MaskMark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/TiCodec (3kbps)/Timbre-Watermark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/TiCodec (3kbps)/Timbre-Watermark/attacked_107.wav"></audio></td>
+      <td>Watermarked<br/><audio controls src="/assets/TiCodec (3kbps)/WavMark/wm_107.wav"></audio><br/>Watermarked + transformed<br/><audio controls src="/assets/TiCodec (3kbps)/WavMark/attacked_107.wav"></audio></td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
